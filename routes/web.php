@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('permiso','Permiso');
+
+Route::get('permiso/{nombre}','PermisoController@index');
